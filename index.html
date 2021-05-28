@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+        <script type="module" src="./js/main.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="control-panel">
+                <button id="btn-add-start" class="btn btn-add">
+                    Add student
+                </button>
+                <button id="btn-remove" class="btn btn-remove">
+                    Remove last added
+                </button>
+            </div>
+            <div class="content">
+                <div class="form">
+                    <form id="human-form" name="human-form">
+                        <label>
+                            First Name
+                            <input
+                                type="text"
+                                name="first-name"
+                                value="Alice"
+                            />
+                        </label>
+
+                        <div class="message" data-for="first-name"></div>
+
+                        <label>
+                            Last Name
+                            <input type="text" name="last-name" value="Brown" />
+                        </label>
+
+                        <div class="message" data-for="last-name"></div>
+
+                        <label>
+                            Marks
+                            <input
+                                type="text"
+                                name="marks"
+                                value="10 6 9 3 11"
+                            />
+                        </label>
+
+                        <div class="message" data-for="marks"></div>
+                    </form>
+                </div>
+                <div style="display: flexbox">
+                    <div
+                        id="teacher-name"
+                    ></div>
+                    <ol id="human-container" class="list">
+                    </ol>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

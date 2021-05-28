@@ -1,0 +1,104 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 12px;
+}
+
+.btn {
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    font-size: 1rem;
+    outline: none;
+    font-weight: 600;
+}
+
+.btn-add {
+    background-color: palegreen;
+}
+
+.btn-remove {
+    background-color:lightcoral;
+}
+
+
+main {
+    padding: 10px;
+}
+
+.control-panel {
+padding: 10px;
+}
+
+.content {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: first baseline;
+    padding-top: 10px;
+
+}
+
+.content .form {
+    margin-right: 10px;
+    font-size: 14px;
+    width: 40%;
+}
+
+.list {
+    width: 100%;
+}
+
+#teacher-name {
+    padding: 0 0 2% 50%;
+    flex-direction: column;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 100%;    
+}
+
+.list-item {
+    border-radius: 10px;
+    border: 1px dotted #ccc;
+    box-shadow: 0 2px 4px black;
+    margin: 10px 0;
+    padding: 10px 7px;
+    background: rgb(197, 227, 255);
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+input, label {
+    display: block; 
+    text-align: center
+}
+
+input {
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin: 2px auto 7px;
+    padding: 5px 2px;
+    width: 80%;
+
+}
+input.error {
+    border-bottom: 3px solid red;
+}
+
+.message {
+    display: none;
+    color: white;
+}
+
+.message > span {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    background: lightcoral;
+
+}
